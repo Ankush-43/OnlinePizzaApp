@@ -1,0 +1,63 @@
+ADD CUSTOMER
+Method-Post
+Url-http://localhost:9091/customer/insert
+Body-
+{
+    "customerName": "Banhisikha Chanda",
+    "customerMobile": 888888,
+    "customerEmail": "abc@gmail.com",
+    "customerAddress": "Kharagpur",
+    "userName": "bani0302",
+    "password": "bani123"
+}
+{
+    "customerName": "Ankush Bose",
+    "customerMobile": 9999999,
+    "customerEmail": "xyz@gmail.com",
+    "customerAddress": "Kolkata",
+    "userName": "ankush123",
+    "password": "ankush123"
+}
+
+
+
+
+VIEW ALL CUSTOMER 
+Method-Get
+Url:http://localhost:9091/customer/retrieve
+
+
+
+
+EDIT CUSTOMER DETAILS(here edited the email id)
+Method-Put
+Url:http://localhost:9091/customer/edit
+
+Body:
+{
+    "customerId": 102,
+    "customerName": "Ankush Bose",
+    "customerMobile": 9999999,
+    "customerEmail": "ankush@gmail.com",
+    "customerAddress": "Kolkata",
+    "userName": "ankush123",
+    "password": "ankush123"
+}
+
+
+
+
+VIEW CUSTOMER BY ID
+Method:Get
+Url:http://localhost:9091/customer/viewonecustomer/102
+
+
+
+
+DELETE CUSTOMER BY ID
+Method-Delete
+Url:http://localhost:9091/customer/DeleteCustomer/101
+
+
+
+

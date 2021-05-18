@@ -1,0 +1,26 @@
+Add Coupn
+Method-POST
+http://localhost:9091/coupan/add
+{
+    "coupanCode": "#a%ghs&2#",
+    "coupanDescription": "Flat discount of 100RS",
+    "coupanDiscount": 100.0
+}
+
+Delete Coupan
+Method-DELETE
+http://localhost:9091/coupan/delete/201
+
+View All Coupans
+Method-GET
+http://localhost:9091/coupan/viewAllCoupan
+
+Edit Coupan
+Method-PUT
+http://localhost:9091/coupan/editCoupan
+{
+    "coupanId": 201,
+    "coupanCode": "#a%ghs&212#",
+    "coupanDescription": "Flat discount of 100RS",
+    "coupanDiscount": 100.0
+}
